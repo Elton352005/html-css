@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol>
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>escovar os dentes</li>
+
+    </ol>
+    <img src="tag ol_01.png" alt="">
+    <p>A tag "ol" definie o titulo da lista</p>
+    <p>A tag "li" define os tópicos da lista</p>
+    <p><strong>Obs.</strong> Não há necessidade de enumeração dos tópicos pois as tags ja fazem essa função</p>
+    <p> A tag "ol" oferce tipos de listas com a tag "type" inserida logo após "ol"</p>
+    <p>Tais tipos referem-se à Numerico, alfabético minúsculo e maiúsculo, alfabaeto romano minúsculo e maiúsculo etc...</p>
+    <p>E também é possivel determinar a ordem a qual a lista será apresentada com a tag "start" após a tag "type"</p>
+    <p>Exemplo:</p>
+
+    <ol type="1" start="4">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>escovar os dentes</li>
+
+    </ol>
+    <img src="tag ol_02.png" alt="">
+    <p>No exemplo acima determinamos que a lista tem o tipo "numérico" e inicia a contagem de tópicos à aprtir do número 4</p>
+    <p>Exemplos de tipos </p>
+    <ol type="I">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <img src="tag ol_03.png" alt="">
+    <hr>
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <img src="tag ol_04.png" alt="">
+    <hr>
+    <h2>Listas não Ordenadas</h1>
+    <p>Para este tipo de lista a tag utilizada é "ul"</p>
+    <P>Os demais conceitos são extamente os mesmos mencionados anteriormente. Contudo e, neste caso, não haverão numerações ou carcteres que identifiquem as linhas da lista</P>
+    <ul>
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ul>
+    <img src="tag ol_05.png" alt="">
+    <p>A tag "ul" também oferece tipos (Type). Tais tipos referem-se ao caractere utilizado para identificar a linha(a bolinha no incio da linha)</p>
+    <p>Alguns tipos são "disk", "circle" e "square" </p>
+    <p>Exemplos</p>
+    <ul type="square"> 
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ul>
+    <img src="tag ol_06.png" alt="">
+    <p>Outra dica que facilita no Visual Studio Code. Por exemplo ao Invés de digitar OL depois 4 Li's pode usar o comando  ol>li*4   e depois tecla Tab que ele já faz toda a estrutura com os 4 LI's dentro. Isso serve para as outras tags também. </p>
+    <p>Antes de preencher</p>
+    <img src="atalho ol.png" alt="">
+    <ol>
+        <li>Comer</li>
+        <li>Beber água</li>
+        <li>arrotar</li>
+        <li>Peidar</li>
+    </ol>
+    <p>Depois de preencher</p>
+    <img src="atalho ol_01.png" alt="">
+    <p>Pessoal, um macete muito interessante é apertar "CTRL+ENTER", fará você ir para uma nova linha mesmo que o cursor do mouse esteja entre tags </p>
+    <h2>Juntando Listas V1.0</h2>
+    <p>Para este recurso utilizamos a tag "ol" dentro da tag "li"</p>
+    <img src="tag ol dentro da tag li.png" alt="Exercicio 009">
+    <h3>Minhas linguagens favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <img src="tag ol_07.png" alt="">
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul>
+            <li>Mario Bros</li>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul>
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul>
+            <li>Final Fantasy</li>  
+            <li>Caltlevania</li>
+        </ul>
+    </ol>
+    <img src="tag ol_08.png" alt="">
+    <p>Inserindo um terceiro nivel de junção</p>
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>  
+            <li>Caltlevania</li>
+        </ul>
+    </ol>
+    <img src="tag ol_09.png" alt="">
+    <hr>
+    <h2>Lista de Difinição</h2>
+    <p>apresentada através da tag "d1"</p>
+    <P>Dentro da tag "d1" existem as tags "dt" e "dd" </P>
+    <ul type="disk">
+        <li>d1
+            <ul type="circle">
+                <li>dt - Termo</li>
+                <li>dd - Descrição do termo</li>
+            </ul>
+        </li>
+    </ul>
+    <p>Exemplo 1</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcaração para o conteúdo de um site</dd>
+    </dl>
+
+    <img src="tag d1_01 simples.png" alt="">
+    <d1>
+        <dt>CSS</dt>
+        <dd>Linguagem para marcação do design de um site</dd>
+    </d1>
+    <img src="tag d1_02 simples.png" alt="">
+
+    <p>Exemplo com varias informações juntas</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcaração para o conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem para marcação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de prgramação para interatividade de um site</dd>
+    </dl>
+    <img src="tag d1_03 simples.png" alt="">
+    <HR></HR>
+    <p>Outros exemplos de Listas</p>
+    <ol>
+        <li>1</li>
+           <ol type="a">
+              <li>1,1</li>
+              <li>1,2</li>
+              <li10,3</li>
+              <li>1,5</li>
+              <li>1,6</li>
+          </ol>
+        <li>2</li>
+            <ol type="I">
+                <li>2,1</li>
+                <li>2,2</li>
+            </ol>
+        <li>3</li>
+            <ol type="i">
+                <li>3,1</li>
+                <li>3,2</li>
+            </ol>
+        <li>4</li>
+            <ul type="circle">
+                <li>4,1</li>
+                <li>4,2</li>
+            </ul> 
+    </ol>
+<img src="tag ol_10.png" alt="">
+
+</body>
+</html>

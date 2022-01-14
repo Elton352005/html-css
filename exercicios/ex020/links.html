@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        #  = id
+        .  = classe
+        :  = pseudo-class
+        :: = pseudo-elemento
+        >  = children/filho
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-color: aqua;
+            width:auto;
+            text-align: center;
+        }
+
+        a { /*tag de Link atrelado ao texto*/
+            color: black;
+            text-decoration: none;/*remove o sublinhado do texto*/
+            font-weight: bold; /*Texto em negrito*/
+        }
+
+        a:visited { /* Pseudo-classe-> Cor em que o link deve ficar após visitado*/
+            color: red;
+        }
+
+        a:hover { /*/* Pseudo-classe->Sublinha o texto quando o mouse passa por cima*/
+            text-decoration: underline;
+            color:blue; /*ficar preto quando o mouse passar por cima*/
+        }
+
+        a:active {/*/* Pseudo-classe->Link deve ficar verde quando for clicado/segurado*/
+            color: green;
+        }
+        /*Pseudo-classes (:) são termos de definem "estados" de elementos dentro da HTML*/
+
+        .especial::before{ /*Pseudo-elemento (::) antes do link...*/
+            content: '❱';
+        }
+
+        .especial::after {/*Pseudo-elemento (::) depois do link...*/
+            content: '❰'; /*Inserir conteúdo (caractere de seta)*/
+        }
+
+        .especial{/*Esta classe terá fundo de cor marine*/
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisando links</h1>
+
+   <ul>
+       <li><a href="https://gustavoguanabara.github.io" target="_blank" >Repositório GitHub</a></li>
+       <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do Youtube</a></li><!--Criada uma casse para este link (especial)-->
+       <li><a href="https://www.cursoemvideo.com" target="_blank">Site do curso em vídeo</a></li>
+   </ul>
+
+</body>
+</html>

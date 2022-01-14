@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML</title>
+</head>
+    <body>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+   
+       
+            <h2>Videos hospedados utuilizando a tag "vídeos" pode ficar muito caro para o cliente/Alto consumo de banda </h2>
+        
+   
+
+    <p>Este vídeo está hospedado no me próprio servidor (meu computador)</p>
+
+    <P>a tag utilizada para isto é <strong>video</strong> e tem o mesmo conceito de criação da tag <strong>audio</strong></P>
+ 
+
+    <img src="referências/video_01.png" alt="video">
+
+       <p>O tamanho origianl do video pode ficar muito grande na tela. Então, é possivel reduzi-lo com o parâmetro "width" após o arquivo</p>
+
+       <img src="referências/video_02.png" alt="video">
+       
+       <p>Neste exemplo de código, inserimos um único tipo de arquivo</p>
+
+    <video src="media/aguaviva.mp4" width="500" height="250" controls></video>
+
+    <p>Neste outro, inserimos varios arquivos visando a execução em todos os navegadores</p>
+
+    <p>Para isso, utilizamos o parâmetro <strong>controls</strong> à frente de <strong>video</strong> + a tag <strong>source:src</strong></p>
+
+        <img src="referências/video_03.png" alt="video">
+
+    <video width="500" height="250" poster="imagens/agua-viva-video.png" controls loop>
+        <source src="media/Aguaviva-1.m4v" type="video/mp4">
+        <source src="media/Aguaviva-1.webm" type="video/webm">
+        <source src="media/aguaviva.mp4" type="video/mp4">
+        <source src="media/aguaviva.ogv" type="video/ogg">
+
+        <p>Seu navegador navegador não tem compatibilidade com reprodução de vídeos</p>
+
+    </video>
+
+    <p>É possivel inserir a capa do vídeo utilizando a tag <strong>poster</strong></p>
+    <img src="referências/video_04.png" alt="video">
+    <hr>
+
+    <h1>Disponibilizando videos de servidores externos(Youtube, por exemplo)</h1>
+    <p>Ao compartilhar um video do youtube, é possivel "incorporar" o link. Lá tem essa opção. Basta copiar este link incorporado e colar aqui. O código ja estará monatdo</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zjCawglcXbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>O consumo de banda neste vídeo será no servidor do Youtube</p>
+    <p>O youtube não possui limitações de configurações para o video que for disponibilizado</p>
+
+    <p>Abaixo, temos um exmeplo de vídeo do <strong>Vímeo</strong>. Netse canal, é possivel limitar que pode ter acesso a determinadas ações e configurações. Desde que o usuário ou o dono do site possua uma conta no Vimeo</p>
+
+    
+</body>
+</html>

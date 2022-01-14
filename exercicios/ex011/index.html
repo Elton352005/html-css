@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HMTL5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    
+    <p>Tente abrir esse site em vários dispositivos ou simplesmente aumente e diminua o tamamnho do seu navegador</p>
+
+    <p>A tag a ser utilizada para imagens dinâmicas é <strong>picture</strong></p>
+    <img src="Referências/picture_1.png" alt="picture_1">
+    
+    <p>Essa tag "diz" ao usário que VAI APRECER UMA IMAGEM. Ela permite que você crie várias fontes/tamanhos e faz com as imagens se adequem ao tamanho da tela do disositivo que esta sendo utilizado (celular/tablet ou computador) </p>
+
+    <p>Dentro da tag <strong>picture</strong> utilizamos a tag <strong>a</strong></p>
+
+    <abbr title="picture+A"><img src="Referências/picture + img_1.png" alt="picture + img"></abbr>
+
+    <p>Inserimos no site uma imagem em tamanho "G". Porém, quando o usuário navega numa tela pequena, é gerada uma barra de rolagem na borda inferior da página. Isso acontece prq a imagem é muito grande pro tamanho da tela do dispositivo que esta sendo utilizado</p>
+
+    <p>Pra resolver isso, dentro da tag <strong>picture</strong>, utilizamos a tag <strong>source ->source:media:type</strong></p>
+
+    <img src="Referências/source_1.png" alt="source">
+    <p>A imagem abaixo descreve o ponto "max.width" como um critério para carregar nossa imagem "G"</p>
+
+    <img src="Referências/source_2.png" alt="source">
+
+    <p>Mas se o navegador tiver o tamanho menor que o tamanho da imagem "G", determniamos que a imagem a ser carregada será a "M"</p>
+    <p>A imagem "G" tem 1000px. Então, determinamos que, se o navegador tiver a tela menor que 1050px (Deixamos uma margem de 50px), a imagem "M" deve ser carrega </p>
+
+    <img src="Referências/source_3.png" alt="source">
+
+    <p>E repitimos o mesmo procedimento pro tamanho de iumagem "P"</p>
+    <p>Nossa imagem "M" tem 700px. Determniamos que, se o navegador tiver menos que 750px, a imagem a ser carregada deve ser a "P"</p>
+    <img src="Referências/source_4.png" alt="source">
+
+    <p>É possivel inserir vários tamanhos de imagens. Desde que a orden de tamanhos seja respeitada. É aconselhável que se mantenha na ordem do menor para o maior.</p>
+
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="G">
+
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reporoduzir audios em HTML5</p>
+    <p>A tag a ser utilizada é <strong>audio</strong></p>
+
+    <img src="Referências/audio_01.png" alt="audio">
+    <P>Até então, não é possivel executar o audio. Pra corrigir isso, precisamos inserir o "complemento" <strong>autoplay</strong></P>
+
+    <img src="Referências/audio_02.png" alt="">
+    
+    <p>Porém, antes de <strong>autoplay</strong>, é necessário inserir as funções do player. Pra isso, utilizamos <strong>controls</strong></p>
+
+    <img src="Referências/audio_03.png" alt="audio">
+
+    <p>Dessa forma, o player será apresentado conforme abaixo. E também permite inetração</p>
+
+    <audio src="media/musica.mp3" controls autoplay></audio>
+
+    <p>Alguns navegadores não têm total compatibilidade com reprodução de audio</p>
+    <P>Neste exemplo, tivemos de utilizar a função "controls" antes de "autoplay". Isso é devido a falta de compatibilidade para reprodução automática do navegador</P>
+    <P>Arquviso padrões e recomendáveis para utilização de audio em todosos navegadores são basicamente: MP3, WAV e OGG</P>
+
+    <P>Outro meio de adicionar audio é:</P>
+
+    <P>Remover o parâmetro <strong>souce</strong> criado pela tag <strong>audio</strong>e inserir dentro da tag <strong>audio</strong>. Só que, deverá ser escolhido o tipo <strong>source:src</strong></P>
+    
+    <img src="Referências/audio_04.png" alt="audio">
+    <p>Após inserir seu arquivo de audio, é necessário inserir o tipo no campo <strong>type</strong>. Neste exemplo, vamos itulizar "audio/mpeg" (aquivo do tipo MP3) </p>
+     
+    <img src="Referências/audio_05.png" alt="audio">
+    <img src="Referências/audio_06.png" alt="audio">
+
+    <p>Podemos fazer com o que a navegador execute os arquivos por tipo de media. No exemplo abaixo, inserimos mais duas linhas. Uma com arquivo "OGG" e outra com "MP3". O navegador irá respeitar a ordem das linhas e irá procurar peli primeiro tipo. Caso não encontre, irá pro segundo. E assim por diante.</p>
+   
+    <img src="Referências/audio_07.png" alt="audio">
+    
+    <p>Caso não seja compatível com nenhum dos arquvos. É possivel deixar uma mensagem informando sobre a incompatibilidade</p>
+    <img src="Referências/audio_08.png" alt="audio">
+
+    <p>Para contornar isso, podemos deixar um link para download do arquivo junto da mensagem</p>
+
+    <img src="Referências/audio_09.png" alt="audio">
+
+    <p>Caso tenha feito tudo isso e o audio não seja compatível com o navegador pode-se utilizar a função <strong>preload</strong> a frente de <strong>audio</strong></p>
+    <img src="Referências/audio_10.png" alt="audio">
+
+    <p>É um tanto "perigoso" utilizar a "auto". Pois só será possivel executar o arquvio após o download da media feito pelo carregado. E se o arquvo for muito grande não é nada benéfico para o site. Deixar o campo em branco determina que o aprâmetro será "auto"</p>
+    <dl>
+        <dt><strong>auto</strong></dt>
+        <dd>Carrega o arquivo antes de executar</dd>
+        <dt><strong>metadata</strong></dt>
+        <dd>Carrega apenas a descrições do arquvio</dd>
+        <dt><strong>none</strong></dt>
+        <dd>Não carrega nada (apenas quando o usuário da play)</dd>
+    </dl>
+
+    <p>Neste exemplo, utilizamos "metada" seguido de "auto play controls"</p>
+
+    <img src="Referências/audio_11.png" alt="audio">
+
+    <p>temos também uma outra função que podemos ahregar nessa linha de comando. o <strong>loop</strong>. Isso fará com que o audio volte a tocar assim que for finalizado</p>
+    <p>Esta função, utilizamos à frente de "controls"</p>
+
+    <img src="Referências/audio_12.png" alt="audio">
+    <p><strong>Obs.</strong> Sempre evitar arquvios do tipo "WAV" pois são muito grandes</p>
+
+
+    <audio preload="metadata" autoplay controls loop>
+       <source src="media/musica.mp3" type="audio/mpeg">
+       <source src="media/musica.ogg" type="audio/ogg">
+       <source src="media/musica.qav" type="audio/wav">
+       <p>Infelizmente seu navegador não consegue reproduzir o arquivo de audio. <a href="media/musica.mp3"></a></p>       
+    </audio>
+
+</body>
+</html>

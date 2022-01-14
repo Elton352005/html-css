@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <hr>
+    <h2>Códigos Fonte / Pré-formatação</h2>
+    <p>O comando <code>document.get.ElementById('Teste')</code> é escrito em linguagem JavaScript</p>
+    <p>Isso serve para deiuxar o espaçamento do texto selecionado com as mesmas dimensões (Mono Espaçada)</p>
+     <p>Utilizando a tag "code" antes de escrever o texto</p>
+     <code>
+         num = int(input('Digite um número'))
+         if num % 3 == 0;
+            print(f'o número {num} é PAR)
+         else:
+            print(f'o número {num} é IMPAR) 
+     </code>
+     <p>Repare que o texto ficou todo disposto em uma única linha</p>
+     <p>Para deixarmos o texto indentado (organizado de acordo com o modo como foi digitado) utilzamos a tag "pre"</p>
+     <p>Abaixo, exemplo do texto com a tag "pre"</p>
+     <pre>
+         <code>
+            num = int(input('Digite um número'))
+            if num % 3 == 0;
+               print(f'o número {num} é PAR)
+            else:
+               print(f'o número {num} é IMPAR) 
+             </code>
+     </pre>
+        <p>Repare que a linha de código ficou com bastante espaço a frente.</p>
+        <p>Isso porque o código foi escrito dessa forma.</p>
+        <p>Podemos eliminar estes espaços utilizanod o comando SHIF+TAB com o texto selecionado</p>
+        <p>Abaix, está um exemplo</p>
+        <pre>
+            <code>
+num = int(input('Digite um número'))
+if num % 3 == 0;
+    print(f'o número {num} é PAR)
+else:
+    print(f'o número {num} é IMPAR) 
+                </code>
+        </pre>
+        <p>Para inserir espaços basta selecionar o texto e utilizar a tecla "TAB"</p>
+
+        <h2>Citações</h2>
+        <p>Como diria o pai de um amigo: O computador é um burro muit rápido</p>
+        <p>para inserir aspas duplas em um texto a tag utilizada é "q"</p>
+        <p>Exemplo</p>
+        <p>Como diria o pai de um amigo: <q>O computador é um burro muit rápido</q></p>
+        <h2>Citações Completas</h2>
+        <p>No exemplo abaixo utilizaremos uma parte de um texto de um site para referenciar nosso texto</p>
+        <p>Dúvidas sobre como começar a estudar HTML?</p>
+        <blockquote cite="https://www.homehost.com.br/blog/tutoriais/o-que-e-html/">
+            Se você trabalha ou tem familiaridade com tecnologia e internet, provavelmente já ouviu falar sobre HTML. Mas afinal, o que é esse tal de HTML?
+        </blockquote>
+        <p>Repare que o texto fica deslocado à frente. Com um pequeno espaçamento em relação à margem da página
+        Para este recurso a tag utilizada é <q><strong>blockquote</strong></q></p>
+        <p>Também pssivel citar/inserir o link de referência do texto o quel foi utlizado dentro da tag "blockquote</p>
+        <p>tal ação é ralizada atravéz do termo "cite" inserido logo à frente do palavra "blockquote".</p>
+        <p>Dessa forma <q><strong>blockquote cite</strong> "htts://www.blablabla..."</q></p>
+        <p>Essa ação não muda em nada o seu texto. Porém, os mecanismos e busca do navegador saberão que esta frase está refenciando o artigo do site o qual você utilizou. Ou seja, o navegador saberá de onde você tirou esse texto</p>
+        <H2>Abreviações</H2>
+        <p>Exemplo</p>
+        <p>Estou estudando <abbr title="HyperText Markup"><strong>HTML</strong></abbr> e <abbr title="Cascading Style Sheets"><strong>CSS</strong></abbr></p>
+        <p>Com a tag "<strong>abbr</strong>" podemos descrever o que cada sigla quer dizer. Então, quando o ponteiro do mouse estiver sobre a sigla, um texto com a descrição será apresentada</p>
+        <h2>Texto Invertido</h2>
+        <p>Para isso utilizamos a tag "<strong>bdo</strong>"</p>
+        <p><bdo dir="rtl">Estou aprendedno a criar coisa em HTML</bdo></p>
+        
+
+
+
+
+</body>
+</html>

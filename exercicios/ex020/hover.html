@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                }
+        div > p{/*Dizendo que o texto em "P" deve ser ocultado*. O caractere ">" indica que haverá uma ação para o filho da div*/
+                display: none;
+            }
+            div:hover{/*Dizendo que, quando passar o mouse na div(texto) o texto deve ficar vermelho, */
+                color: red;            
+            }
+
+            div:hover > p{/*A div, quando poassar o mouse no texto, deve mostrar o conteúdo abaixo*/
+                display: block; /*Mostrar a DIV*/
+                color: white; /*Texto na cor branca*/
+                background-color: red; /*Fundo do texto vermelho*/
+                width: 80px; /*Com 80 pixel de largura*/
+            }
+
+            d4:hover > p2{
+                background-color: aqua;
+            }
+        </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+        <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse aqui.
+            <p>Achoooou!</p> <!--Paragrafo dentro de "Div" chama-se "child/filho"-->
+    </div>
+  
+</body>
+</html>

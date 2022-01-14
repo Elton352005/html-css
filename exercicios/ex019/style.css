@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/*
+id em HTML = # em CSS
+class em HTML = . em CSS
+"id" Utiliza-se para identificação única de um elemento
+"class" utiliza-se para identificação de vários elementos com um mesmo nome
+É possivel utilizar as duas coisas juntas, duas ou mais classes juntas
+*/
+
+
+body{
+    background-color: rgb(129, 129, 245);
+    border-radius: 10%;   
+    box-shadow: #2C6B51, #A9EED1, #60EBB1, #0f3022;
+    width: 600px;;
+    padding: 10%;
+    margin: auto;
+    
+  
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+#principal{ /* Buscando o ID "pricncipal" no HTML*/
+    background-color: blue;
+    color:white);
+    text-align: center;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    background-color: blue;
+}
+
+.basico{
+    color: green;
+}
+
+.intermediario{
+    color: rgb(177, 85, 10);
+}
+
+.avancado{
+    color: rgb(163, 3, 3);
+}
+
+h2{
+    color: black;
+    text-align: justify;
+    padding: 1%;
+    text-indent: 1%;
+}
+
+p{
+    text-align: justify;    
+    text-indent: 2%;
+}
+

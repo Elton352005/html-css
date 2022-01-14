@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/Favicon/favicon.ico" type="image/x-icon">
+    <title>Trabalhando com Hiperlink</title>
+</head>
+<body>
+    <p><ins><strong>Pesquisar sobre SEO</strong></ins></p>
+    <dl>
+        <dt><strong>SEO</strong></dt>
+        <dd>Serching Engine Optimization</dd>
+    </dl>
+    <img src="Imagens/Exemplos/d1_1.png" alt="">
+    <p>Serve para organizar o código HTML para que mecanismos de busca possam encontrar o seu site</p>
+    <hr>
+
+    <h1>Usando links externos</h1>
+    <dl>
+        <dt><strong>Link Externo</strong></dt>
+        <dd>Link que aponta para outro site que não seja o que estamos visitando</dd>
+    </dl> 
+    <img src="Imagens/Exemplos/d1_2.png" alt="">
+
+    <p>Para este fim, utilizamos a tag "a". Nela inserimos o link para o qual será direcioando ao clicar</p>
+
+    <p>Exemplo:</p>
+
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io">repositório publico no Github</a></p>
+
+    <img src="Imagens/Exemplos/tag a 01.png" alt="">
+ 
+    <p>Quando se utiliza a tag "a" o texto pertinente ao link fica sublinhado.</p>
+
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo"> canal gratuito no youtube</a></p>
+    <img src="Imagens/Exemplos/tag a 02.png" alt="">
+
+    <p><strong>Obs.</strong><ins>Utilizando links dessa forma, o usuário será direcionado a outra página. Ou seja, sairá do seu site.</ins></p>
+
+<p>Para evitar isso e fazer com que o link seja aberto em uma nova aba (mantendo a sua aberta) utiliza-se <strong>target="_blank"</strong> logo após as aspas do link na tag <strong>a</strong> junto com o termo <strong>"rel"</strong> que é relativo a "<strong>external</strong>".</p> 
+
+<p>Existe também o termno <STRONG>target="_self"</STRONG>. Que determina pro navegador que o link é dedicado somente a este site</p>
+<img src="Imagens/Exemplos/tag a 08.png" alt="">
+<p>Exemplo</p>
+
+<p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external"> canal gratuito no youtube</a></p>
+<img src="Imagens/Exemplos/target + rel.png" alt="">
+<hr>
+<hr>
+<h1>Usando links internos</h2>
+
+<p>Links internos fazem ligações com outras páginas/outros serviços/arquivos que estão dentro do nosso servidor (que fazem parte do nosso site)</p>
+
+<p>Deve ser criado um novo arquvio <strong>index.html</strong> na mesma pasta a qual você está utilizando para criar este site </p>
+<img src="Imagens/Exemplos/pag002.png" alt="">
+
+<p>Esta é a primeira pagina do meu site. Se você quiser pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
+
+<img src="Imagens/Exemplos/tag a 03.png" alt="">
+
+<p>Clicando no link será feito o direcionamento pra segunda página</p>
+
+<p>Repare que no termo "<strong>rel</strong>" esta escrito "<strong>next</strong>". Isso refere-se à proxima pagina deste mesmo site</p>
+<img src="Imagens/Exemplos/tag a 04.png" alt="">
+<p>Com isso, você determina pro navegador que a pagina a ser "visitada" é uma pagina interna do seu site. É basicamente pra não deixar o navegador decidir, por contá própria qual será a pagina. Ele será obrigado a direcionar pra próxima/next</p>
+
+<p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+
+<p><a href="pag002.html" rel="next" target="_self">Próxima página</a></p>
+
+<h1>Link Para Download</h1>
+<p>Lembre-se de pesquisar o tipo de comando/atributo para inserir no link de download</p>
+<ul>
+    <li>
+        <a href="livro/10 - Ligações em toda parte.pdf"  target ="_blak" type="aplication/pdf">Baixar livro em PDF</a>
+    </li>
+
+    <li>
+        <a href="livro/10 - Ligações em toda parte.rar" type="	application / vnd.comicbook-rar">Baixar livro compactado em RAR</a>
+    </li>
+
+</ul>
+<img src="Imagens/Exemplos/tag a+ul.png" alt="">
+<hr>
+  
+
+</body>x
+</html>
